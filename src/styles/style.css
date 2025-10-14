@@ -1,1 +1,51 @@
+/*
+* --------------------------------------------
+* Custom styles to override the default Bootstrap ones
+* --------------------------------------------
+*/
 
+/* New Color Palette:
+* Gunmetal(Darkest): 253031
+* Dark slate gray(Second darkest): 315659
+* Cerulean(Third): 2978A0
+* Ecru(Second lightest): BCAB79
+* Columbia Blue(lightest): C6E0FF
+*/
+
+.bg-info {
+  background-color: #315659 !important; /*navbar background*/
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+  color: #253031; /* navbar text */
+}
+
+.btn-info {
+  color: #c6e0ff; /* Login/Signup text */
+  background-color: #2978a0; /* Button background */
+  border-color: #315659; /* button border */
+}
+
+.btn-primary {
+  color: #c6e0ff; /* Lightest shade for text */
+  font-size: 150%;
+  background-color: #253031; /* Dark green for primary button background */
+  border-color: #315659; /* Reddish-brown for border to use as accent */
+  border-width: thick;
+}
+
+body {
+  background-color: #c6e0ff; /* Lightest shade for body background to follow the 60% rule */
+}
+
+.navbar-brand {
+  font-family: "BBH Sans Bogle", sans-serif; /*change the font name for what you have*/
+  font-size: 2.25rem;
+}
+
+.maintext {
+  color: #253031;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}

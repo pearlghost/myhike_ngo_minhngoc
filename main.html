@@ -8,12 +8,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
     <!-- Web Components for shared navbar and footer layout -->
     <script type="module" src="/src/components/site-navbar.js"></script>
     <script type="module" src="/src/components/site-footer.js"></script>
@@ -28,6 +22,15 @@
     <site-navbar></site-navbar>
 
     <!-- Main content goes here -->
+    <div class="container-fluid text-dark p-5">
+      <div class="container p-5">
+        <h1 class="display-4">
+          Good morning <span id="name-goes-here">friend </span>
+        </h1>
+        <hr />
+        <p>Wamt to look at some of our cats, as well as our today's menu?</p>
+      </div>
+    </div>
 
     <!-- our own footer goes here -->
     <site-footer></site-footer>
@@ -37,5 +40,6 @@
     <!---------------------------------------------->
 
     <script type="module" src="/src/app.js"></script>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
