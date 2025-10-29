@@ -14,7 +14,6 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
     <!-- Web Components for shared navbar and footer layout -->
     <script type="module" src="/src/components/site-navbar.js"></script>
     <script type="module" src="/src/components/site-footer.js"></script>
@@ -29,39 +28,15 @@
     <site-navbar></site-navbar>
 
     <!-- Main content goes here -->
-    <!-- This is the welcome on the landing page, with a login/signup button -->
-    <div class="container">
-      <div class="px-4 py-5 my-5 text-center">
-        <img
-          class="d-block mx-auto mb-4"
-          src="/images/simplecupofcoffe.png"
-          alt=""
-          width="72"
-          height="57"
-        />
-        <h1 class="display-5 fw-bold">
-          Hello, <span id="name-goes-here"> and welcome to our cafe!</span>
-        </h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">
-            Welcome to Fluff & A Frappuccino, a cat cafe where you can play with
-            cats and sip your cup of coffee.
-          </p>
-          <br />
-          <h2>Explore a variety of coffee's blends.</h2>
-          <div class="d-grid justify-content-sm-center">
-            <!-- Make this button clickable, using onclick event listener -->
-            <button
-              onclick="window.location.href='login.html'"
-              type="button"
-              class="btn btn-info btn-lg"
-            >
-              Login/Signup
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <main class="container py-4">
+      <h1 id="coffeeName">Loading...</h1>
+      <img
+        id="coffeeImage"
+        class="img-fluid rounded mt-3"
+        src=""
+        alt="Coffee image"
+      />
+    </main>
 
     <!-- our own footer goes here -->
     <site-footer></site-footer>
@@ -69,7 +44,8 @@
     <!---------------------------------------------->
     <!-- Your own JavaScript scripts go here      -->
     <!---------------------------------------------->
+
     <script type="module" src="/src/app.js"></script>
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/eachCoffee.js"></script>
   </body>
 </html>

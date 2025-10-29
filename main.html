@@ -25,13 +25,35 @@
     <div class="container-fluid text-dark p-5">
       <div class="container p-5">
         <h1 class="display-4">
-          Good morning <span id="name-goes-here">friend </span>
+          Good morning <span id="name-goes-here">dear Customer</span>!
         </h1>
         <hr />
-        <p>Wamt to look at some of our cats, as well as our today's menu?</p>
+        <p>
+          Want to look at some of our cats, as well as our today's menu?
+          <div>Cats of the Day: </div>
+          <span id="quote-goes-here"></span>
+        </p>
       </div>
     </div>
 
+    <div class="container-fluid bg-light text-dark p-5">
+      <h1>Today's Drinks:</h1>
+      <div id="coffee-go-here" class="row"></div>
+    </div>
+
+    <template id="coffeeCardTemplate">
+      <div class="col">
+        <div class="card">
+          <img class="card-img-top card-image" src="..." alt="Coffee Image">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+            <p class="card-length"></p>
+            <a class="btn btn-primary read-more" href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </template>
     <!-- our own footer goes here -->
     <site-footer></site-footer>
 
